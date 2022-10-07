@@ -1,0 +1,63 @@
+{
+  "listings": [
+    {
+      "id": 1,
+      "name": "peony estate Kilimani",
+      "image": "https://i0.wp.com/properties.greenkenya.org/wp-content/uploads/2020/11/F10.jpg?resize=592%2C444&ssl=1",
+      "price":"KSh 10,800,000",
+      "likes": 8
+    },
+    {
+      "id": 2,
+      "name": "perry west Kilimani",
+      "image": "https://i2.wp.com/properties.greenkenya.org/wp-content/uploads/2021/04/PW02.jpg?resize=592%2C444&ssl=1",
+      "price":"KSh 8,800,000",
+      "likes": 14
+    },
+    {
+      "id": 3,
+      "name": "johari west Kilimani",
+      "image": "https://i1.wp.com/properties.greenkenya.org/wp-content/uploads/2020/12/1-2.jpg?resize=592%2C444&ssl=1",
+      "price":"KSh 15,800,000",
+      "likes": 14  
+    },
+    {
+      "id": 4,
+      "name": "3 Bed Apartment  Kileleshwa",
+      "image": "https://i.roamcdn.net/prop/brk/listing-medium-600w-watermark/53f987004651806cf989882f5059c09f/-/prod-property-core-backend-media-brk/4218061/c368c2c0-1c23-4f0d-abe2-8fbbb3ebb4af.jpeg",
+      "price":"KSh 21,800,000",
+      "likes": 14  
+    },
+    {
+      "id": 5,
+      "name": "2 Bed Apartment Kileleshwa",
+      "image": "https://i.roamcdn.net/prop/brk/listing-thumb-376w/07b7a6907207fa0931d5a316b5e3c294/-/prod-property-core-backend-media-brk/4046381/8f19a6b8-2029-4158-b8c7-acbe09322950.jpeg",
+      "price":"KSh 13,800,000",
+      
+
+      "likes": 14 
+    },
+    {
+      "id": 6,
+      "name": "1 Bed Apartment  Kileleshwa",
+      "image": "https://i.roamcdn.net/prop/brk/listing-thumb-376w/8dd85782ee465e2f7a43f241179091e6/-/prod-property-core-backend-media-brk/4048676/1bf13703-b381-460f-bea7-121e88ecdad0.jpg",
+      "price":"KSh 10,800,000",
+      
+      "likes": 14  
+    },
+    {
+      "id": 7,
+      "name": "3 Bed Apartment  Kilimani",
+      "image": "https://i.roamcdn.net/prop/brk/listing-thumb-376w/7a9ab043da7b50c0a357d4e491cbda7d/-/prod-property-core-backend-media-brk/4491472/79eff92d-9429-4fab-9a25-873b9d0cd746.JPG",
+      "price": "KSh 12,800,000",
+      "likes": 14  
+    },
+    {
+      "id": 8,
+      "name": "2 Bed Apartment  Kilimani",
+      "image": "https://i.roamcdn.net/prop/brk/listing-thumb-376w/c6690aa4a0ed66f89abc9872f3a6f4e6/-/prod-property-core-backend-media-brk/4156083/9f25361e-01ee-42d1-b762-ba192a9acc34.jpg",
+      "price": "KSh 8,800,000",
+      "likes": 14  
+    }
+  ]
+}
