@@ -11,6 +11,7 @@ const ListingCard = ({listing}) => {
       }}>
       <h2>{listing.name}</h2> 
       <img src={listing.image} />
+      
       <p>price: {listing.price}</p>
     </div>
   )

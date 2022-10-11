@@ -17,9 +17,16 @@ body {
   text-align: center;
   padding: 5px;
 }
-.Img1 {
-  height: 40vmin;
-  pointer-events: none;
+
+#home,
+#about,
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
 }
 #search-form{
   display: flex;

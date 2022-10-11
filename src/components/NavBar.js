@@ -1,51 +1,47 @@
 import React from "react";
 import Hero from "./Hero";
-import { NavLink} from "react-router-dom"
 
 
-function NavBar() {
+
+function NavBar({ onChangePage }) {
+
+  function handleLinkClick(e) {
+    e.preventDefault()
+    onChangePage(e.target.pathname)
+  }
   return (
     <div  style={{ backgroundColor: "orangered", textAlign: "center"
       }}>
         <Hero />
         
     
-   <nav class="d-flex justify-content-center navbar navbar-expand-lg  bg-dark " >
+  
    <div className="NavBar" style={{
      backgroundColor: "white", 
      textAlign: "center", 
      width:"100%",
+     display: "flex",  
+    
+    flexDirection: "column",
+    padding: "1rem"
+
     
      
       }}> 
-    <ul class="navbar-nav mr-auto" style={{
-      textAlign: "right",
-      justifyContent: "right",
       
-    }
+      <nav style={{
       
-    }>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Finder</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          Listings
-        </a>
-       
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#">Login</a>
-      </li>
-    </ul>
+      display: "flex",
+       justifyContent: "space-between",
 
- 
+      }}>
+            <a onClick={handleLinkClick} href="/">Home</a>
+            <a onClick={handleLinkClick} href="/about">Listings</a>
+            <a onClick={handleLinkClick} href="/Login">Login</a>
+        </nav>
    
   </div>
-</nav>
+
 
      
     </div>

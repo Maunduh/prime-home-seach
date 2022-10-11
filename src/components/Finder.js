@@ -3,28 +3,40 @@ import React, {useEffect, useState}from 'react';
 
 
 
+
+
 const Finder = () => {
-  const [Listings] = useState([])
-  const [query, setQuery] = useState("")
+  const [results, setResult] = useState([])
+  const [searchParam] = useState(["id", "name"]);
+  const [q, setQ] = useState("");
   useEffect(() => {
 
-    fetch("http://localhost:3001/listings?q=" + query)
+    fetch("http://localhost:3001/listings")
       .then((resp) => resp.json())
-      .then(Listings=> (Listings))
-  }, [query])
+      .then(results=> setResult(results.filter(()=>{
+       return {searchParam}
+      })))
+  }, [])
 
 
   function handleSearch(event){
-    setQuery(event.target.value)
+   event.preventDefault();
+    setResult(event.target.value)
 }
+
+
   return (
     <div>
    <form id="search-form">
-                <input id="search" handleSearch={handleSearch} placeholder="Search ..." type={"text"}/>
-                <button class="Btn">< i class="fa fa-search"/></button>
+                <input id="search" handleSearch={handleSearch} placeholder="Search ..." type="text"
+                value={q}
+                onChange={(event) => setQ(event.target.value)}/>
+                 
+                
+                <button class="Btn" onClick={(result) =>result}>< i class="fa fa-search"/></button>
             </form>
     </div>
   )
 }
 
-export default Finder;
+export default Finder ;

@@ -1,32 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import { Route, Switch } from "react-router-dom";
+
 import NavBar from './components/NavBar';
 import Home  from "./components/Home"
 
 import Listings from './components/Listings';
 import Footer from './components/Footer';
-// import Login from './components/Login';
+import Login from './components/Login';
+
+
 
 function App() {
+  const [page, setPage] = useState("/")
+  function getCurrentPage() {
+    switch(page) {
+        case "/":
+            return <Home />
+        case "/Listings":
+            return <Listings />
+        case "/Login":
+            return <Login/>
+        default:
+            return <h1>404 not found</h1>
+    }
+}
   return (
     <>
-    {/* <div> */}
-    {/* <NavBar/> */}
-   {/* <Switch>
-   <Route component={Home} exact={true} path="/"/>
-    <Route component={Finder} exact={true} path="/Finder"/>
-     <Route component={Listings} exact={true} path="/Listings"/> */}
-    {/* <Route component={Login} exact={true} path="/Login"/> */}
-
-  {/* </Switch>
-  </div> */}
-    <NavBar />
-    <Home />
-    
+   
+   <NavBar onChangePage={setPage} />
+            {getCurrentPage()}
+     
     <Listings />
     <Footer />
-        
           
      
     
