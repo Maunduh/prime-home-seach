@@ -31,13 +31,14 @@ function NavBar({ onChangePage }) {
       
       <nav style={{
       
-      display: "flex",
-       justifyContent: "space-between",
+      display: "inline-flex",
+       justifyContent: "space-evenly",
+       marginLeft: "100 px"
 
       }}>
             <a onClick={handleLinkClick} href="/">Home</a>
             <a onClick={handleLinkClick} href="/about">Listings</a>
-            <a onClick={handleLinkClick} href="/Login">Login</a>
+            <a onClick={handleLinkClick} href="/Adminpage">Admin</a>
         </nav>
    
   </div>

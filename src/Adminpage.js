@@ -1,5 +1,6 @@
 import React, {useEffect, useState}from 'react'
 import Listings from './components/Listings';
+import Login from './components/Login';
 
 
 const Adminpage = () => {
@@ -13,14 +14,31 @@ const Adminpage = () => {
   if (!authenticated) {
   // Redirect
   } else {
- 
+
     return (
      <div>
-      
+     <Login />
      </div>
     );
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default Adminpage
+
+
+
 
  
   
@@ -34,5 +52,5 @@ const Adminpage = () => {
   
 
 
-export default Adminpage
+
 

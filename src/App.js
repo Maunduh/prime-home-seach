@@ -1,13 +1,10 @@
 import React, {useState} from 'react';
 import './App.css';
-
 import NavBar from './components/NavBar';
 import Home  from "./components/Home"
-
 import Listings from './components/Listings';
 import Footer from './components/Footer';
-import Login from './components/Login';
-
+import Adminpage from './Adminpage';
 
 
 function App() {
@@ -18,8 +15,8 @@ function App() {
             return <Home />
         case "/Listings":
             return <Listings />
-        case "/Login":
-            return <Login/>
+        case "/Adminpage":
+            return <Adminpage/>
         default:
             return <h1>404 not found</h1>
     }

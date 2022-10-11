@@ -10,32 +10,31 @@ const Login = () => {
   const users = [{ username: "amos", password: "1234" }];
   const handleSubmit = (e) => {
     e.preventDefault()
-   
+
     const account = users.find((user) => user.username === username);
     if (account && account.password === password) {
         setauthenticated(true)
         localStorage.setItem(authenticated,true);
     } 
   }
-  render(<Adminpage />)
-  return (
-    <div>
   
-    <form onSubmit={handleSubmit}>
-    <input
-      type="text"
-      name="Username"
-      value={username}
-      onChange={(e) => setusername(e.target.value)}
-    />
-    <input
-      type="password"
-      name="Password"
-      onChange={(e) => setpassword(e.target.value)}
-    />
-    <input type="submit" value="Submit" />
-    </form>
-  </div>
+  return(
+    <div>
+  <form onSubmit={handleSubmit}>
+  <input
+    type="text"
+    name="Username"
+    value={username}
+    onChange={(e) => setusername(e.target.value)}
+  />
+  <input
+    type="password"
+    name="Password"
+    onChange={(e) => setpassword(e.target.value)}
+  />
+  <input type="submit" value="Submit" />
+  </form>
+</div>
 )
 };
 

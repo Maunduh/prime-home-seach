@@ -1,6 +1,6 @@
 import React from "react";
 
-import Finder from './Finder';
+
 
 
 
@@ -14,7 +14,7 @@ function Home() {
       width: "100%",
   }} >
       
-      <Finder />
+  
    
     </div>
   );

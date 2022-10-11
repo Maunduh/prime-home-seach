@@ -32,7 +32,7 @@ const Footer = () => {
               prime home search
             </p>
             <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-              <CDBFooterLink href="/">Resources</CDBFooterLink>
+                         
               <CDBFooterLink href="/">About Us</CDBFooterLink>
               <CDBFooterLink href="/">Contact</CDBFooterLink>
               <CDBFooterLink href="/">Blog</CDBFooterLink>

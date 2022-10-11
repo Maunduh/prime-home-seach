@@ -1,34 +1,29 @@
 
 import React, {useEffect, useState} from "react";
 import ListingCard from "./ListingCard";
+import ListingContainer from "./ListingContainer";
 
 
 function Listings() {
-  
-  const [listings, setListings] = useState([])
+      
 
  
+   const [listings, setData] = useState([])
+   
 
-  useEffect(() => {
+  useEffect (()=>{
     fetch("http://localhost:3001/listings")
-    .then(response => {
-      return response.json()
-    })
-    .then(data => {
-      setListings(data)
-    })
-  }, [])
- 
-
-
- 
-  
+    .then(r=>r.json())
+    .then(data=>setData(data))
+  },[]) 
 
   
-   return(
+
+return (
     <>
-   <div
-    className= 'cards'style={{
+    
+   <ListingContainer />
+   <div className= 'cards'style={{
       alignSelf:"center",
       padding:"10px"
     }}>
@@ -37,14 +32,15 @@ function Listings() {
     return< ListingCard listing={listing} key={listing.id}/>
       })}
       </div>
-    </div>
+      </div>
+  
     </> 
       
   
   )
 
-  }
   
+}
    
 
 
